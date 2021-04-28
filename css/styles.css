@@ -97,17 +97,7 @@ hr {
   text-decoration: underline;
 }
 
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 80px
-}
 
-.bottom-cloud {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
-}
 .computer-image {
   width: 25%;
   float: left;
@@ -168,7 +158,11 @@ hr {
 }
 
 
-
+.button-style{
+  position:relative;
+  left: 43%;
+  transform: translate(-50%);
+}
 
 .btn:link,
 .btn:visited {
@@ -233,4 +227,46 @@ hr {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+
+
+.intro{
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider{
+  background: rgb(208,208,208);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text{
+  color: black;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 2rem;
+}
+.text{
+  font-family: 'Kiwi Maru', serif;
+}
+
+.hide{
+  background: white;
+  overflow: hidden;
+}
+
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
 }
